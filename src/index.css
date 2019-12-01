@@ -1,0 +1,79 @@
+h1 {
+	text-align: center;
+	font-family: sans-serif;
+}
+p {
+	text-align: center;
+	font-family: sans-serif;
+	max-width: 500px;
+	margin: 0 auto 10px;
+}
+.overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #000000;
+	opacity: 0.7;
+}
+#overlay-message {
+	display: none;
+	position: fixed;
+	box-sizing: border-box;
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	transform: translate(-50%, -50%);
+	background: #ffff;
+	color: #353944;
+	text-align: center;
+	font-family: sans-serif;
+	padding: 50px 65px;
+	border-radius: 6px;
+}
+#overlay-message h3 {
+	margin: 0 0 20px 0;
+}
+#overlay-message p {
+	margin: 0 0 40px 0;
+}
+#win, #lose {
+	display: none;
+}
+#win.show, #lose.show, .overlay.show, #overlay-message.show {
+	display: block;
+}
+#yes, #no {
+	margin: 0;
+	padding: 10px 0;
+	font-weight: bold;
+	color: #908cff;
+	border: 2px solid #908cff;
+	border-radius: 2px;
+	width: 140px;
+	cursor: pointer;
+}
+#yes {
+	margin-right: 20px;
+	color: #ffffff;
+	background-color: #908cff;
+}
+#reset {
+	font-family: sans-serif;
+	color: #908cff;
+	cursor: pointer;
+}
+.canvas-container {
+	display: block;
+	margin: 0 auto;
+}
+.upper-canvas {
+	cursor: default!important;
+}
+#reset {
+	width: 401px;
+	margin: 0 auto 10px;
+	text-align: right;
+}
